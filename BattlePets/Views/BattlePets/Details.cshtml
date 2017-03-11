@@ -1,0 +1,50 @@
+﻿@model BattlePets.Models.BattlePet
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BattlePet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dmg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dmg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.speed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.speed)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
